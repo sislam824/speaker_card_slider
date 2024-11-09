@@ -1,0 +1,29 @@
+@mixin modal-animation($direction) {
+  @keyframes fadeInSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOutSlideDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+  @if $direction == "in" {
+    animation: fadeInSlideUp 3s ease forwards;
+  } @else if $direction == "out" {
+    animation: fadeOutSlideDown 3s ease forwards;
+  }
+}
