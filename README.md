@@ -19,10 +19,10 @@ This project presents a visually engaging list of featured event speakers, built
 
 ## Screenshots
 
-![Speaker Carousel](./assets/s1.png)
+![Speaker Carousel](assets/s1.png)
 _The interactive speaker carousel with "Previous" and "Next" buttons._
 
-![Speaker Detail Modal](/assets/s2.png)
+![Speaker Detail Modal](assets/s2.png)
 _Modal displaying detailed speaker profile, including name, position, organization, social media links, and bio._
 
 ![Responsive Design](assets/s3.png)
