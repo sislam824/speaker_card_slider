@@ -14,14 +14,14 @@ body {
 .slick-prev,
 .slick-next {
   background-color: $white;
-  border: 1px solid $gray-light;
-  width: 36px;
-  height: 36px;
+  border: 1px solid $gray-light !important;
+  width: 36px !important;
+  height: 36px !important;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $gray-dark;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: gray !important;
   border-radius: 50%;
 }
 
@@ -29,17 +29,14 @@ body {
 .slick-next:before {
   color: $gray-light;
   font-size: $font-size-medium;
-  opacity: 1;
-  content: "";
+  opacity: 1 !important;
+  content: "" !important;
 }
 
 .slick-prev::after {
   content: "<";
   color: $gray-dark;
   font-size: $font-size-medium;
-  border: 1px solid #dadada !important;
-  padding: 10px;
-  border-radius: 100%;
 }
 
 .slick-next::after {
@@ -47,9 +44,6 @@ body {
   color: $gray-medium;
   font-size: $font-size-medium;
   font-weight: bold;
-  border: 1px solid #dadada !important;
-  padding: 10px;
-  border-radius: 100%;
 }
 
 .slider-container {
@@ -217,7 +211,7 @@ body {
   transform: translateY(20px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .slider-container {
     padding: 20px;
   }
