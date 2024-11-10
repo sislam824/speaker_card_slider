@@ -29,7 +29,7 @@ $(document).ready(function () {
 
         settings: {
           slidesToShow: 1,
-          arrows: false,
+          arrows: true,
         },
       },
     ],

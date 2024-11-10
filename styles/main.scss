@@ -62,6 +62,7 @@ body {
   cursor: pointer;
   margin: 10px;
   box-shadow: $shadow-light;
+  transition: transform 0.3s ease-in-out;
   &__image {
     width: 150px;
     height: 150px;
@@ -167,7 +168,9 @@ body {
   display: flex;
   gap: 10px;
 }
-
+.speaker-card:hover {
+  transform: scale(1.03);
+}
 .modal {
   margin-top: 50px;
   display: grid;
@@ -213,15 +216,18 @@ body {
 
 @media screen and (max-width: 768px) {
   .slider-container {
-    padding: 20px;
+    padding: 40px;
   }
 
   .speaker-card {
     padding: 20px;
-    margin: 5px;
+    margin: 20px;
     width: 100%;
   }
-
+  .speakers {
+    padding: 60px 0;
+  }
+}
   .speaker-card__image {
     width: 100px;
     height: 100px;
@@ -276,9 +282,7 @@ body {
     top: 5px;
     right: 5px;
   }
-  .slider-container {
-    padding: 0 50px 0px 20px;
-  }
+
   .slider {
     padding: 0 10px;
   }
