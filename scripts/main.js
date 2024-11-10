@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
     speakerCard.dataset.company = speaker.company;
 
     speakerCard.innerHTML = `
-      <img src="${speaker.image}" alt="${speaker.name}" class="speaker-card__image" />
+      <img src="${speaker.image}" alt="${speaker.name}, ${speaker.role} at ${speaker.company}" class="speaker-card__image" />
       <h3 class="speaker-card__name">${speaker.name}</h3>
       <div class="role_div">
       <p class="speaker-card__role">${speaker.role}</p>
